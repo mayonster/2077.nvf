@@ -1,4 +1,7 @@
 { lib, ... }: {
+  #imports = [
+  # ./theme
+  #];
   vim = {
     # Base Vim settings
     options = {
