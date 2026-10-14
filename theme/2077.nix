@@ -1,11 +1,17 @@
-{ pkgs, ... }:
 {
-  config.vim.extraPlugins = {
-    theme2077 = {
-      package = pkgs.vimPlugins.2077;
-      setup = ''
-        require('2077').setup
-      '';
+  pkgs,
+  lib,
+  ...
+}: let
+  localPlugins = import ../vimPlugins.nix {inherit pkgs;};
+in {
+  vim = {
+    theme.enable = true;
+    startPlugins = with localPlugins; {
+      "2077.nvim".package = theme-2077-nvim;
     };
+    luaConfigRC.theme-2077-nvim = lib.nvim.dag.entryAfter ["pluginConfigs"] ''
+      require('2077').setup()
+    '';
   };
 }
