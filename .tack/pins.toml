@@ -58,6 +58,7 @@ group = "Base"
 [inputs.tack]
 url = "github:manic-systems/tack"
 group = "rafware"
+recomposable = true
 
 [inputs."2077.nvim"]
 url = "forge:mayonster/2077.nvim"
