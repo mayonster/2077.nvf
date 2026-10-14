@@ -1,4 +1,9 @@
 # NVF
+
+### Run Me!
+`nix run git+https://git.mayonster.com/mayonster/2077.nvf`
+or clone this repo, navigate to it, and `nix run .`
+
 This is intended to eventually be my custom nvf config
 
 ~~However, it appears that I will have to publish my color scheme, [2077.nvim](https://github.com/mayonster/2077.nvim), in some manner. At the moment, I'm unsure if that's going to have to be through exposing it as a flake, contributing it to nixpkgs, or maybe publishing it as a package on github.~~ 
@@ -8,3 +13,4 @@ This is intended to eventually be my custom nvf config
 ~~Motherfucking nixos got me man i gotta start actually publishing my shit instead of conviently reffering to my github repos~~
 
 It appears i can re-write all my highlight groups in nix. Project for the future
+
