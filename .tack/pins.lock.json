@@ -1,7 +1,9 @@
 {
   "$declared": {
+    "2077.nvim": "git+https://git.mayonster.com/mayonster/2077.nvim",
     "nixpkgs": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz",
-    "nvf": "github:notashelf/nvf"
+    "nvf": "github:notashelf/nvf",
+    "tack": "github:manic-systems/tack"
   },
   "2077.nvim": {
     "type": "git",
@@ -24,5 +26,13 @@
     "rev": "969775ccc2830a70119ba8720a4cf250490a1f56",
     "narHash": "sha256-f6n9FW5Ke2VnhlrIgycPXSbfguAzsiUlUeIyK4j6hCw=",
     "lastModified": 1791915337
+  },
+  "tack": {
+    "type": "github",
+    "owner": "manic-systems",
+    "repo": "tack",
+    "rev": "cb825647a30e7f54915babbec5b5786c647772d6",
+    "narHash": "sha256-F+sgyf1KB/ogY41JJ52WPYuWXosB6dXTlO3J/m+xcww=",
+    "lastModified": 1791942069
   }
 }
