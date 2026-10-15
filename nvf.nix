@@ -1,6 +1,9 @@
 {lib, ...}: {
   imports = [
     ./theme
+    ./plugins
+    ./keymaps.nix
+    ./autocmds.nix
   ];
   vim = {
     # Base Vim settings
@@ -36,6 +39,12 @@
       backspace = "indent,eol,start";
       autochdir = false;
       mouse = "a";
+    };
+
+    opts = {
+      cursorline = true;
+      cursorlineopt = "both";
+      statuscolumn = "%s %{v:lnum} %{v:relnum} ";
     };
 
     lineNumberMode = "relNumber";
@@ -74,8 +83,8 @@
     };
 
     terminal.toggleterm = {
-      enable = true;
-      lazygit.enable = true;
+      enable = false;
+      lazygit.enable = false;
     };
   };
 }
